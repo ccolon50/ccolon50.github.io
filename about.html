@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: #2f307d;
+    }
+    .active {
+        background-color: #ff0068;
+    }
+    .active:hover {
+        background-color: #c90656;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #3c3b9c;
+    }
 </style>
 <head>
-
+    <link rel="import" href="index.html">
+    <link rel="icon" type="image/x-icon" href="grizzlylogo.png">
+    <title>Grizzly Airlines</title>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="https://www.fsairlines.net/crewcenter/index.php?status=va&status2=logged&va=50082&p=127584">Join us</a></li>
+    </ul>
 </head>
 <body>
 
-
+    <h1>We are Grizzly Airlines</h1>
 </body>
-
-
 </html>

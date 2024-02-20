@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-    .bottom {
+    .first {
         color:#ff0068;
-        background-color: #3c3b9c;
+        border: black;
+        border-style: solid;
+        border-radius: 5px;
+    }
+    .active {
+        background-color: #ff0068;
+    }
+    .active:hover {
+        background-color: #c90656;
     }
     li {
         float: left;
@@ -12,16 +20,19 @@
         display: block;
         color: #ffffff;
         text-align: center;
-        padding: 10px;
+        padding: 10px 20px;
         text-decoration: none;
     }
     li a:hover {
-        background-color: #ff0068;
+        background-color: #2f307d;
     }
     ul {
+        position: fixed;
+        top: 0;
         list-style: none;
+        width: 100%;
         margin: 0;
-        padding: 0;
+        padding: 0px;
         overflow: hidden;
         background-color: #3c3b9c;
     }
@@ -30,20 +41,21 @@
         background-repeat: no-repeat;
         background-size: auto;
         background-attachment: fixed;
-        background-position: center;
-        
+        background-position: center; 
     }
 </style>
 <head>
     <link rel="icon" type="image/x-icon" href="grizzlylogo.png">
     <title>Grizzly Airlines</title>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://www.fsairlines.net/crewcenter/index.php?status=va&status2=logged&va=50082&p=127584">Join us</a></li>
+    </ul>
 </head>
 <body>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-    </ul>
-    <div class="bottom">
+
+    <div class="first">
         <h1>This is a Heading</h1>
         <p>This is a paragraph.</p>
     </div>
