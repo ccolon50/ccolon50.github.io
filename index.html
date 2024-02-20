@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 <style>
-    h1 {
+    .bottom {
         color:#ff0068;
+        background-color: #3c3b9c;
     }
-
-    p {
-        color: #3c3b9c;
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: #ff0068;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #3c3b9c;
     }
     body {
         background-image: url("737_flight.png");
@@ -15,15 +31,21 @@
         background-size: auto;
         background-attachment: fixed;
         background-position: center;
+        
     }
 </style>
+<head>
     <link rel="icon" type="image/x-icon" href="grizzlylogo.png">
     <title>Grizzly Airlines</title>
 </head>
 <body>
-    
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
-
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="bottom">
+        <h1>This is a Heading</h1>
+        <p>This is a paragraph.</p>
+    </div>
 </body>
 </html>
